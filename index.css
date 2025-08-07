@@ -1,0 +1,60 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 13px;
+    background-color: EDEDED;
+}
+
+.avatar, .profile-image{    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+}
+
+.logo{
+    width: 40%;
+    height: auto;
+    display: block;
+}
+
+.header, .container{
+    background-color: #FFFFFF;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 15px 5px;
+    border-bottom: 2px solid #C6C6C6;
+}
+
+.container, .post-image{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.location{
+    display: block;
+}
+
+.profile-name, .likes{
+    font-weight: bold;
+}
+
+.icon{
+    width: 23px;
+    margin-right: 5px;
+}
+
+.post-end{
+    padding: 15px 10px 2px;
+}
+
