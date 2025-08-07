@@ -37,11 +37,11 @@ for (let i = 0; i < posts.length; i++){
                 <img class="profile-image" src="${post.avatar}" alt="${post.name}'s Avatar">
                 <p><span class="profile-name">${post.name}</span><span class="location">${post.location}</span></p>
             </div>
-            <img class="post-image" src="${post.post}" alt="An oil painting by ${post.name}">
+            <img class="post-image" src="${post.post}" alt="A self portrait oil painting by ${post.name}">
             <div class="post-end">
-                <img class="icon" src="images/icon-heart.png">
-                <img class="icon" src="images/icon-comment.png">
-                <img class="icon" src="images/icon-dm.png">
+                <img class="icon" src="images/icon-heart.png" alt="Like Icon">
+                <img class="icon" src="images/icon-comment.png" alt="Comment Icon">
+                <img class="icon" src="images/icon-dm.png" alt="Direct Message Icon">
                 <p class="likes">${post.likes.toLocaleString()} likes</p>
                 <p class="comment"><span class="profile-name">${post.username}</span> ${post.comment}</p>
             </div>`
