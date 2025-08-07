@@ -1,4 +1,4 @@
-const posts = [
+let posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
@@ -27,4 +27,24 @@ const posts = [
         likes: 152
     }
 ]
+
+const mainEl = document.getElementById("main")
+for (let i = 0; i < posts.length; i++){
+   let post = posts[i]
+    mainEl.innerHTML += `
+        <div class="container">
+            <div class="profile">
+                <img class="profile-image" src="${post.avatar}" alt="${post.name}'s Avatar">
+                <p><span class="profile-name">${post.name}</span><span class="location">${post.location}</span></p>
+            </div>
+            <img class="post-image" src="${post.post}" alt="An oil painting by ${post.name}">
+            <div class="post-end">
+                <img class="icon" src="images/icon-heart.png">
+                <img class="icon" src="images/icon-comment.png">
+                <img class="icon" src="images/icon-dm.png">
+                <p class="likes">${post.likes.toLocaleString()} likes</p>
+                <p class="comment"><span class="profile-name">${post.username}</span> ${post.comment}</p>
+            </div>`
+
+}
 

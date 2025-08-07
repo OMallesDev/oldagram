@@ -35,10 +35,18 @@ html, body {
     width: 100%;
 }
 
+.container{
+    margin-bottom: 20px;
+}
+
 .profile{
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 15px;
     align-items: center;
+}
+
+.profile p {
+    margin-left: 10px;
 }
 
 .location{
@@ -57,4 +65,10 @@ html, body {
 .post-end{
     padding: 15px 10px 2px;
 }
+
+.likes, .comment{
+    margin-top: 5px;
+}
+
+
 
